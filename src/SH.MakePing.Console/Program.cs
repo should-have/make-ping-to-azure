@@ -10,6 +10,7 @@ namespace SH.MakePing.App
 
         static void Main(string[] args)
         {
+            Console.WriteLine($"Make a request to {_url}");
             var response = _httpClient.GetAsync(_url).Result;
             if (response.IsSuccessStatusCode)
             {
